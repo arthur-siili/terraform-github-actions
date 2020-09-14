@@ -2,7 +2,7 @@
 
 function terraformPlan {
   #Hack just to test stuff
-  cd /IoT-IAC/dev
+  cd ./IoT-IAC/dev
   # Gather the output of `terraform plan`.
   echo "plan: info: planning Terraform configuration in ${tfWorkingDir}"
   planOutput=$(terraform plan -detailed-exitcode -input=false ${*} 2>&1)
