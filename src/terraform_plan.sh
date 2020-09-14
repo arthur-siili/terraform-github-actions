@@ -2,6 +2,8 @@
 
 function terraformPlan {
   #Hack just to test stuff
+  echo "Running in \n"
+  pwd
   cd ./IoT-IAC/dev
   # Gather the output of `terraform plan`.
   echo "plan: info: planning Terraform configuration in ${tfWorkingDir}"
