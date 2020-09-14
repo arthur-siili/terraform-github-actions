@@ -1,11 +1,6 @@
 #!/bin/bash
 
 function terraformPlan {
-  #Hack just to test stuff
-  pwd
-  cd ./IoT-IAC/dev
-  echo "Running in "
-  pwd
   # Gather the output of `terraform plan`.
   echo "plan: info: planning Terraform configuration in ${tfWorkingDir}"
   planOutput=$(terraform plan -detailed-exitcode -input=false ${*} 2>&1)
